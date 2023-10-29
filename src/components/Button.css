@@ -1,0 +1,60 @@
+/* Style the button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Add margin to space it from the paragraphs */
+  }
+  
+  /* Style the button */
+  .custom-button {
+    background-color: #007bff; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to your desired color */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Add padding as needed */
+    border: none; /* Remove the default button border */
+    cursor: pointer;
+    display: block; /* Make the button a block-level element */
+  }
+  
+  /* Style the button on hover */
+  .custom-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  .left-button {
+    margin-right: 10px; /* Add spacing between the left and right buttons */
+  }
+  
+  .left-button .custom-button {
+    background-color: #007bff; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to your desired color */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Add padding as needed */
+    border: none; /* Remove the default button border */
+    cursor: pointer;
+  }
+  
+  .left-button .custom-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
+  /* Style the right button */
+  .right-button .custom-button {
+    background-color: #ff5733; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to your desired color */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Add padding as needed */
+    border: none; /* Remove the default button border */
+    cursor: pointer;
+  }
+  
+  .right-button .custom-button:hover {
+    background-color: #ff3b00; /* Change the background color on hover */
+  }
+
+  @media screen and (max-width: 400px) {
+    /* Adjust spacing for smaller screens */
+    .button-container {
+        margin-top: 10px; /* Reduce top margin for smaller screens */
+    }
+  }

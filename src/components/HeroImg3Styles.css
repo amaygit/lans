@@ -1,0 +1,96 @@
+.hero-img{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+    text-align: center;
+}
+
+.hero-img::before{
+    content: "";
+    background: url("https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size:cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+}
+.hero-img p{
+    /* font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; */
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.paragraph-container {
+    margin-top: 20px; /* Add margin to the paragraph container */
+  }
+  .custom-button {
+    background-color: #007bff; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to your desired color */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Add padding as needed */
+    border: none; /* Remove the default button border */
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to space it from the paragraphs */
+    display: block; /* Make the button a block-level element */
+  }
+  
+  /* Style the button on hover */
+  .custom-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
+  /* Adjust the margin for the button container */
+  .button-container {
+    margin-top: 20px; /* Add margin to space it from the paragraphs */
+    text-align: center; /* Center the button horizontally */
+  }
+  .mobile-paragraph {
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px; /* Adjust the margin as needed for spacing between paragraphs */
+}
+@media screen and (max-width:640px) {
+    .hero-img h1{
+        font-size: 2rem;
+    }    
+    .hero-img p {
+      margin-bottom: 10px; /* Reduce margin between paragraphs for smaller screens */
+  }
+    .mobile-paragraph {
+      font-size: 1.2rem; /* Adjust the font size for smaller screens */
+      margin-top: 10px; /* Adjust the margin as needed for spacing between paragraphs */
+  }
+}
